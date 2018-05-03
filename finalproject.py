@@ -5,7 +5,8 @@ from db import Base, Restaurant, MenuItem
 
 app = Flask(__name__)
 
-engine = create_engine('sqlite:///dbentries.db')
+#engine = create_engine('sqlite:///dbentries.db')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
