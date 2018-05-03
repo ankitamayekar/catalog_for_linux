@@ -161,5 +161,6 @@ def deleteMenuItem(restaurant_id, menu_id):
 
 
 if __name__ == '__main__':
+    app.secret_key = 'supersecretkey'
     app.debug = True
     app.run(host='0.0.0.0', port=5000)
