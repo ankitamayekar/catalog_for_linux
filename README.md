@@ -43,7 +43,7 @@ In order for your project to be reviewed, the grader needs to be able to log in 
 	
 ## 7. Give grader the permission to sudo.
 	sudo nano /etc/sudoers.d/grader
-	type in :
+	Add the following code to the file.
 			grader ALL=(ALL:ALL) ALL
 
 ## 8. Create an SSH key pair for grader using the ssh-keygen tool.
