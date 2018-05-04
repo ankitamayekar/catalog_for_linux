@@ -47,11 +47,14 @@ In order for your project to be reviewed, the grader needs to be able to log in 
 			grader ALL=(ALL:ALL) ALL
 
 ## 8. Create an SSH key pair for grader using the ssh-keygen tool.
-	su - grader
-	mkdir .ssh
-	touch .ssh/authorized_keys 
-	nano .ssh/authorized_keys 
+	login as user grader
+		su - grader
+	make directory .ssh and authorized_keys file in it.
+		mkdir .ssh
+		touch .ssh/authorized_keys 
+		nano .ssh/authorized_keys 
 	Paste the public key from local machine here.
+	
 	chmod 700 .ssh
 	chmod 644 .ssh/authorized_keys
 	
